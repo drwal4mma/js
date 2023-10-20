@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zmiana koloru tekstu </title>
+    <style>
+        td {
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+<h1>zmiana koloru tekstu</h1>
+<tr>
+
+    <td onmouseover="changetextcolor('gold')" onmouseout="resettextcolor()" style="background-color: gold">gold</td>
+    <td onmouseover="changetextcolor('khaki')" onmouseout="resettextcolor()" style="background-color: khaki">khaki</td>
+    <td onmouseover="changetextcolor('silver')" onmouseout="resettextcolor()" style="background-color: silver">silver</td>
+    <td onmouseover="changetextcolor('peru')" onmouseout="resettextcolor()" style="background-color: peru">peru</td>
+
+
+
+</tr>
+
+<script>
+function changetextcolor(color) {
+    document.querySelector('h1').style.color = color;
+}
+
+function resettextcolor() {
+    document.querySelector('h1').style.color = 'black';
+}
+
+
+
+</script>
+
+</body>
+</html>
